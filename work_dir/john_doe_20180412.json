@@ -1,0 +1,34 @@
+#!/usr/bin/env dropseq-runner
+{
+  "investigator": "John Doe",
+  "run_date": "2018-04-12",
+  "assay_protocol": "seqwell",
+  "samples": [
+    {
+      "run_id": "run_01",
+      "sample_id": "sample_01",
+      "core_barcodes": 2000,
+      "expected_barcodes": 2000,
+      "read1": {
+        "path": "Barnayard_Original_S3_R1_001.fastq.gz",
+        "class": "File"
+      },
+      "read2": {
+        "path": "Barnayard_Original_S3_R2_001.fastq.gz",
+        "class": "File"
+      },
+      "species_genome_dir": {
+        "path": "hg19mm10_star",
+        "class": "Directory"
+      },
+      "species_reference_fasta": {
+        "path": "hg19_mm10_transgenes.fasta",
+        "class": "File"
+      },
+      "species_reference_refFlat": {
+        "path": "hg19_mm10_transgenes.refFlat",
+        "class": "File"
+      }
+    }
+  ]
+}

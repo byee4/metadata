@@ -1,0 +1,160 @@
+WORKDIR: /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/workdir
+
+========================================================================
+PATHS
+========================================================================
+
+PATH: /projects/ps-yeolab4/software/dropseqtools/1.13/wf:/projects/ps-yeolab4/software/dropseqtools/1.13/cwl:/projects/ps-yeolab4/software/dropseqtools/1.13/bin:/projects/ps-yeolab/software/eclipconda/envs/dropseqtools-1.13/bin:/oasis/tscc/scratch/bay001/gcloud/google-cloud-sdk/bin:/projects/ps-yeolab3/bay001/software/jellyfish-2.2.7/bin:/projects/ps-yeolab3/bay001/software/TransDecoder-TransDecoder-v5.0.2:/home/bay001/anaconda2/envs/brian/bin:/projects/ps-yeolab3/bay001/software/bin:/home/bay001/anaconda2/bin:/oasis/tscc/scratch/bay001/gcloud/google-cloud-sdk/bin:/projects/ps-yeolab3/bay001/software/jellyfish-2.2.7/bin:/projects/ps-yeolab3/bay001/software/TransDecoder-TransDecoder-v5.0.2:/projects/ps-yeolab3/bay001/software/bin:/home/bay001/anaconda2/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/sdsc/bin:/opt/sdsc/sbin:/usr/java/latest/bin:/opt/maui/bin:/opt/torque/bin:/opt/torque/sbin:/opt/rocks/bin:/opt/rocks/sbin:/projects/ps-yeolab/software/bin/:/home/bay001/bin:/projects/ps-yeolab/software/ciftools/bin:/projects/ps-yeolab/software/AYB2/bin:/projects/ps-yeolab/software/tailseeker2-20151022/bin/:/var/cfengine/bin:/opt/maui/bin:/opt/torque/bin:/opt/torque/sbin:/projects/ps-yeolab/software/bin/:/home/bay001/bin:/projects/ps-yeolab/software/ciftools/bin:/projects/ps-yeolab/software/AYB2/bin:/projects/ps-yeolab/software/tailseeker2-20151022/bin/
+which conda: /home/bay001/anaconda2/envs/brian/bin/conda
+JOB_HOME: /projects/ps-yeolab3/bay001/codebase/metadata/work_dir
+OUTDIR: /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir
+RESULTSDIR: /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/results
+
+========================================================================
+EXECUTING CWL JOB
+========================================================================
+
+
+CWLRUNNER : cwltorq
+BATCHSYSTEM: torque --disableCaching
+
+2018-04-23 13:45:23,421 - toil.toilState - INFO - (Re)building internal scheduler state
+2018-04-23 13:45:23,421 - toil.leader - INFO - Found 1 jobs to start and 0 jobs with successors to run
+2018-04-23 13:45:23,422 - toil.leader - INFO - Checked batch system has no running jobs and no updated jobs
+2018-04-23 13:45:23,423 - toil.leader - INFO - Starting the main loop
+2018-04-23 13:45:29,568 - toil.leader - WARNING - A result seems to already have been processed for job 0
+2018-04-23 13:48:58,968 - toil.leader - INFO - Issued job 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/parse_sample.cwl' f/9/jobrkk0Oc with job batch system ID: 2 and cores: 1, disk: 3.0 G, and memory: 64.0 G
+2018-04-23 13:52:11,870 - toil.leader - INFO - Job ended successfully: 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/parse_sample.cwl' f/9/jobrkk0Oc
+2018-04-23 13:52:11,885 - toil.leader - INFO - Issued job 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/FastqToSam.cwl' picard FastqToSam W/e/jobsj98N_ with job batch system ID: 3 and cores: 1, disk: 2.0 G, and memory: 31.2 G
+2018-04-23 13:52:11,887 - toil.leader - INFO - Issued job 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/CreateSequenceDictionary.cwl' picard CreateSequenceDictionary Z/6/jobSZiKKk with job batch system ID: 4 and cores: 1, disk: 2.0 G, and memory: 31.2 G
+2018-04-23 13:55:22,657 - toil.leader - INFO - Job ended successfully: 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/FastqToSam.cwl' picard FastqToSam W/e/jobsj98N_
+2018-04-23 13:55:22,665 - toil.leader - WARNING - The job seems to have left a log file, indicating failure: 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/FastqToSam.cwl' picard FastqToSam W/e/jobsj98N_
+2018-04-23 13:55:22,666 - toil.leader - WARNING - W/e/jobsj98N_    INFO:toil.worker:---TOIL WORKER OUTPUT LOG---
+2018-04-23 13:55:22,666 - toil.leader - WARNING - W/e/jobsj98N_    INFO:toil:Running Toil version 3.15.0a1-13ed4407b96b3f18717e95501812da4dccb254a1.
+2018-04-23 13:55:22,666 - toil.leader - WARNING - W/e/jobsj98N_    [job FastqToSam.cwl] /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/out_tmpdire1UqPK$ picard \
+2018-04-23 13:55:22,666 - toil.leader - WARNING - W/e/jobsj98N_        FastqToSam \
+2018-04-23 13:55:22,667 - toil.leader - WARNING - W/e/jobsj98N_        -Xmx4g \
+2018-04-23 13:55:22,667 - toil.leader - WARNING - W/e/jobsj98N_        F1= \
+2018-04-23 13:55:22,667 - toil.leader - WARNING - W/e/jobsj98N_        /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/tmpUUFmim/stg5573c955-a28f-4620-80ca-d4d4e214c8ca/Barnayard_Original_S3_R1_001_truncated.fastq.gz \
+2018-04-23 13:55:22,667 - toil.leader - WARNING - W/e/jobsj98N_        F2= \
+2018-04-23 13:55:22,667 - toil.leader - WARNING - W/e/jobsj98N_        /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/tmpUUFmim/stg3b4c1093-843a-4047-90fd-bcdae179f066/Barnayard_Original_S3_R2_001.fastq.gz \
+2018-04-23 13:55:22,668 - toil.leader - WARNING - W/e/jobsj98N_        O= \
+2018-04-23 13:55:22,668 - toil.leader - WARNING - W/e/jobsj98N_        run_01_sample_01.sam \
+2018-04-23 13:55:22,668 - toil.leader - WARNING - W/e/jobsj98N_        SM= \
+2018-04-23 13:55:22,668 - toil.leader - WARNING - W/e/jobsj98N_        run_01_sample_01 \
+2018-04-23 13:55:22,668 - toil.leader - WARNING - W/e/jobsj98N_        SO= \
+2018-04-23 13:55:22,669 - toil.leader - WARNING - W/e/jobsj98N_        queryname
+2018-04-23 13:55:22,669 - toil.leader - WARNING - W/e/jobsj98N_    INFO:cwltool:[job FastqToSam.cwl] /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/out_tmpdire1UqPK$ picard \
+2018-04-23 13:55:22,669 - toil.leader - WARNING - W/e/jobsj98N_        FastqToSam \
+2018-04-23 13:55:22,669 - toil.leader - WARNING - W/e/jobsj98N_        -Xmx4g \
+2018-04-23 13:55:22,669 - toil.leader - WARNING - W/e/jobsj98N_        F1= \
+2018-04-23 13:55:22,670 - toil.leader - WARNING - W/e/jobsj98N_        /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/tmpUUFmim/stg5573c955-a28f-4620-80ca-d4d4e214c8ca/Barnayard_Original_S3_R1_001_truncated.fastq.gz \
+2018-04-23 13:55:22,670 - toil.leader - WARNING - W/e/jobsj98N_        F2= \
+2018-04-23 13:55:22,670 - toil.leader - WARNING - W/e/jobsj98N_        /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/tmpUUFmim/stg3b4c1093-843a-4047-90fd-bcdae179f066/Barnayard_Original_S3_R2_001.fastq.gz \
+2018-04-23 13:55:22,670 - toil.leader - WARNING - W/e/jobsj98N_        O= \
+2018-04-23 13:55:22,670 - toil.leader - WARNING - W/e/jobsj98N_        run_01_sample_01.sam \
+2018-04-23 13:55:22,671 - toil.leader - WARNING - W/e/jobsj98N_        SM= \
+2018-04-23 13:55:22,671 - toil.leader - WARNING - W/e/jobsj98N_        run_01_sample_01 \
+2018-04-23 13:55:22,671 - toil.leader - WARNING - W/e/jobsj98N_        SO= \
+2018-04-23 13:55:22,671 - toil.leader - WARNING - W/e/jobsj98N_        queryname
+2018-04-23 13:55:22,671 - toil.leader - WARNING - W/e/jobsj98N_    13:52:36.222 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/projects/ps-yeolab/software/eclipconda/envs/dropseqtools-1.13/share/picard-2.18.2-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+2018-04-23 13:55:22,671 - toil.leader - WARNING - W/e/jobsj98N_    [Mon Apr 23 13:52:36 PDT 2018] FastqToSam FASTQ=/projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/tmpUUFmim/stg5573c955-a28f-4620-80ca-d4d4e214c8ca/Barnayard_Original_S3_R1_001_truncated.fastq.gz FASTQ2=/projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/tmpUUFmim/stg3b4c1093-843a-4047-90fd-bcdae179f066/Barnayard_Original_S3_R2_001.fastq.gz OUTPUT=run_01_sample_01.sam SAMPLE_NAME=run_01_sample_01 SORT_ORDER=queryname    USE_SEQUENTIAL_FASTQS=false READ_GROUP_NAME=A MIN_Q=0 MAX_Q=93 STRIP_UNPAIRED_MATE_NUMBER=false ALLOW_AND_IGNORE_EMPTY_LINES=false VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+2018-04-23 13:55:22,672 - toil.leader - WARNING - W/e/jobsj98N_    [Mon Apr 23 13:52:36 PDT 2018] Executing as bay001@tscc-1-45.sdsc.edu on Linux 2.6.32-696.10.3.el6.x86_64 amd64; OpenJDK 64-Bit Server VM 1.8.0_152-release-1056-b12; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: 2.18.2-SNAPSHOT
+2018-04-23 13:55:22,672 - toil.leader - WARNING - W/e/jobsj98N_    INFO	2018-04-23 13:52:36	FastqToSam	Auto-detected quality format as: Standard.
+2018-04-23 13:55:22,672 - toil.leader - WARNING - W/e/jobsj98N_    [Mon Apr 23 13:52:38 PDT 2018] picard.sam.FastqToSam done. Elapsed time: 0.04 minutes.
+2018-04-23 13:55:22,672 - toil.leader - WARNING - W/e/jobsj98N_    Runtime.totalMemory()=2043478016
+2018-04-23 13:55:22,673 - toil.leader - WARNING - W/e/jobsj98N_    To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+2018-04-23 13:55:22,673 - toil.leader - WARNING - W/e/jobsj98N_    Exception in thread "main" picard.PicardException: Input paired fastq files must be the same length
+2018-04-23 13:55:22,673 - toil.leader - WARNING - W/e/jobsj98N_    	at picard.sam.FastqToSam.doPaired(FastqToSam.java:419)
+2018-04-23 13:55:22,673 - toil.leader - WARNING - W/e/jobsj98N_    	at picard.sam.FastqToSam.makeItSo(FastqToSam.java:374)
+2018-04-23 13:55:22,673 - toil.leader - WARNING - W/e/jobsj98N_    	at picard.sam.FastqToSam.doWork(FastqToSam.java:347)
+2018-04-23 13:55:22,674 - toil.leader - WARNING - W/e/jobsj98N_    	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:282)
+2018-04-23 13:55:22,674 - toil.leader - WARNING - W/e/jobsj98N_    	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:98)
+2018-04-23 13:55:22,674 - toil.leader - WARNING - W/e/jobsj98N_    	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:108)
+2018-04-23 13:55:22,674 - toil.leader - WARNING - W/e/jobsj98N_    [job FastqToSam.cwl] completed permanentFail
+2018-04-23 13:55:22,675 - toil.leader - WARNING - W/e/jobsj98N_    WARNING:cwltool:[job FastqToSam.cwl] completed permanentFail
+2018-04-23 13:55:22,675 - toil.leader - WARNING - W/e/jobsj98N_    Traceback (most recent call last):
+2018-04-23 13:55:22,675 - toil.leader - WARNING - W/e/jobsj98N_      File "/projects/ps-yeolab/software/eclipconda/envs/dropseqtools-1.13/lib/python2.7/site-packages/toil-3.15.0a1-py2.7.egg/toil/worker.py", line 313, in workerScript
+2018-04-23 13:55:22,675 - toil.leader - WARNING - W/e/jobsj98N_        job._runner(jobGraph=jobGraph, jobStore=jobStore, fileStore=fileStore)
+2018-04-23 13:55:22,675 - toil.leader - WARNING - W/e/jobsj98N_      File "/projects/ps-yeolab/software/eclipconda/envs/dropseqtools-1.13/lib/python2.7/site-packages/toil-3.15.0a1-py2.7.egg/toil/job.py", line 1327, in _runner
+2018-04-23 13:55:22,676 - toil.leader - WARNING - W/e/jobsj98N_        returnValues = self._run(jobGraph, fileStore)
+2018-04-23 13:55:22,676 - toil.leader - WARNING - W/e/jobsj98N_      File "/projects/ps-yeolab/software/eclipconda/envs/dropseqtools-1.13/lib/python2.7/site-packages/toil-3.15.0a1-py2.7.egg/toil/job.py", line 1272, in _run
+2018-04-23 13:55:22,676 - toil.leader - WARNING - W/e/jobsj98N_        return self.run(fileStore)
+2018-04-23 13:55:22,676 - toil.leader - WARNING - W/e/jobsj98N_      File "/projects/ps-yeolab/software/eclipconda/envs/dropseqtools-1.13/lib/python2.7/site-packages/toil-3.15.0a1-py2.7.egg/toil/cwl/cwltoil.py", line 461, in run
+2018-04-23 13:55:22,676 - toil.leader - WARNING - W/e/jobsj98N_        raise cwltool.errors.WorkflowException(status)
+2018-04-23 13:55:22,677 - toil.leader - WARNING - W/e/jobsj98N_    WorkflowException: permanentFail
+2018-04-23 13:55:22,677 - toil.leader - WARNING - W/e/jobsj98N_    ERROR:toil.worker:Exiting the worker because of a failed job on host tscc-1-45.sdsc.edu
+2018-04-23 13:55:22,677 - toil.leader - WARNING - W/e/jobsj98N_    WARNING:toil.jobGraph:Due to failure we are reducing the remaining retry count of job 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/FastqToSam.cwl' picard FastqToSam W/e/jobsj98N_ with ID W/e/jobsj98N_ to 1
+2018-04-23 13:55:22,677 - toil.leader - WARNING - W/e/jobsj98N_    WARNING:toil.jobGraph:We have increased the default memory of the failed job 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/FastqToSam.cwl' picard FastqToSam W/e/jobsj98N_ to 68719476736 bytes
+2018-04-23 13:55:22,691 - toil.leader - INFO - Issued job 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/FastqToSam.cwl' picard FastqToSam W/e/jobsj98N_ with job batch system ID: 5 and cores: 1, disk: 2.0 G, and memory: 64.0 G
+2018-04-23 13:55:26,954 - toil.leader - INFO - Job ended successfully: 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/CreateSequenceDictionary.cwl' picard CreateSequenceDictionary Z/6/jobSZiKKk
+2018-04-23 13:58:31,317 - toil.leader - INFO - Job ended successfully: 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/FastqToSam.cwl' picard FastqToSam W/e/jobsj98N_
+2018-04-23 13:58:31,325 - toil.leader - WARNING - The job seems to have left a log file, indicating failure: 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/FastqToSam.cwl' picard FastqToSam W/e/jobsj98N_
+2018-04-23 13:58:31,326 - toil.leader - WARNING - W/e/jobsj98N_    INFO:toil.worker:---TOIL WORKER OUTPUT LOG---
+2018-04-23 13:58:31,326 - toil.leader - WARNING - W/e/jobsj98N_    INFO:toil:Running Toil version 3.15.0a1-13ed4407b96b3f18717e95501812da4dccb254a1.
+2018-04-23 13:58:31,326 - toil.leader - WARNING - W/e/jobsj98N_    [job FastqToSam.cwl] /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/out_tmpdir0_XoUz$ picard \
+2018-04-23 13:58:31,326 - toil.leader - WARNING - W/e/jobsj98N_        FastqToSam \
+2018-04-23 13:58:31,327 - toil.leader - WARNING - W/e/jobsj98N_        -Xmx4g \
+2018-04-23 13:58:31,327 - toil.leader - WARNING - W/e/jobsj98N_        F1= \
+2018-04-23 13:58:31,327 - toil.leader - WARNING - W/e/jobsj98N_        /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/tmp8JAyPE/stgd4193891-ee0a-4f71-bb3b-8dfb228e3378/Barnayard_Original_S3_R1_001_truncated.fastq.gz \
+2018-04-23 13:58:31,327 - toil.leader - WARNING - W/e/jobsj98N_        F2= \
+2018-04-23 13:58:31,328 - toil.leader - WARNING - W/e/jobsj98N_        /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/tmp8JAyPE/stgfdb24486-1444-45ee-8180-e8fa93e6bb53/Barnayard_Original_S3_R2_001.fastq.gz \
+2018-04-23 13:58:31,328 - toil.leader - WARNING - W/e/jobsj98N_        O= \
+2018-04-23 13:58:31,328 - toil.leader - WARNING - W/e/jobsj98N_        run_01_sample_01.sam \
+2018-04-23 13:58:31,328 - toil.leader - WARNING - W/e/jobsj98N_        SM= \
+2018-04-23 13:58:31,329 - toil.leader - WARNING - W/e/jobsj98N_        run_01_sample_01 \
+2018-04-23 13:58:31,329 - toil.leader - WARNING - W/e/jobsj98N_        SO= \
+2018-04-23 13:58:31,329 - toil.leader - WARNING - W/e/jobsj98N_        queryname
+2018-04-23 13:58:31,329 - toil.leader - WARNING - W/e/jobsj98N_    INFO:cwltool:[job FastqToSam.cwl] /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/out_tmpdir0_XoUz$ picard \
+2018-04-23 13:58:31,330 - toil.leader - WARNING - W/e/jobsj98N_        FastqToSam \
+2018-04-23 13:58:31,330 - toil.leader - WARNING - W/e/jobsj98N_        -Xmx4g \
+2018-04-23 13:58:31,330 - toil.leader - WARNING - W/e/jobsj98N_        F1= \
+2018-04-23 13:58:31,330 - toil.leader - WARNING - W/e/jobsj98N_        /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/tmp8JAyPE/stgd4193891-ee0a-4f71-bb3b-8dfb228e3378/Barnayard_Original_S3_R1_001_truncated.fastq.gz \
+2018-04-23 13:58:31,331 - toil.leader - WARNING - W/e/jobsj98N_        F2= \
+2018-04-23 13:58:31,331 - toil.leader - WARNING - W/e/jobsj98N_        /projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/tmp8JAyPE/stgfdb24486-1444-45ee-8180-e8fa93e6bb53/Barnayard_Original_S3_R2_001.fastq.gz \
+2018-04-23 13:58:31,331 - toil.leader - WARNING - W/e/jobsj98N_        O= \
+2018-04-23 13:58:31,331 - toil.leader - WARNING - W/e/jobsj98N_        run_01_sample_01.sam \
+2018-04-23 13:58:31,332 - toil.leader - WARNING - W/e/jobsj98N_        SM= \
+2018-04-23 13:58:31,332 - toil.leader - WARNING - W/e/jobsj98N_        run_01_sample_01 \
+2018-04-23 13:58:31,343 - toil.leader - WARNING - W/e/jobsj98N_        SO= \
+2018-04-23 13:58:31,343 - toil.leader - WARNING - W/e/jobsj98N_        queryname
+2018-04-23 13:58:31,343 - toil.leader - WARNING - W/e/jobsj98N_    13:55:36.266 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/projects/ps-yeolab/software/eclipconda/envs/dropseqtools-1.13/share/picard-2.18.2-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+2018-04-23 13:58:31,344 - toil.leader - WARNING - W/e/jobsj98N_    [Mon Apr 23 13:55:36 PDT 2018] FastqToSam FASTQ=/projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/tmp8JAyPE/stgd4193891-ee0a-4f71-bb3b-8dfb228e3378/Barnayard_Original_S3_R1_001_truncated.fastq.gz FASTQ2=/projects/ps-yeolab3/bay001/codebase/metadata/work_dir/john_doe_20180412-broken/.tmp/outdir/tmp8JAyPE/stgfdb24486-1444-45ee-8180-e8fa93e6bb53/Barnayard_Original_S3_R2_001.fastq.gz OUTPUT=run_01_sample_01.sam SAMPLE_NAME=run_01_sample_01 SORT_ORDER=queryname    USE_SEQUENTIAL_FASTQS=false READ_GROUP_NAME=A MIN_Q=0 MAX_Q=93 STRIP_UNPAIRED_MATE_NUMBER=false ALLOW_AND_IGNORE_EMPTY_LINES=false VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+2018-04-23 13:58:31,344 - toil.leader - WARNING - W/e/jobsj98N_    [Mon Apr 23 13:55:36 PDT 2018] Executing as bay001@tscc-1-48.sdsc.edu on Linux 2.6.32-696.18.7.el6.x86_64 amd64; OpenJDK 64-Bit Server VM 1.8.0_152-release-1056-b12; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: 2.18.2-SNAPSHOT
+2018-04-23 13:58:31,344 - toil.leader - WARNING - W/e/jobsj98N_    INFO	2018-04-23 13:55:36	FastqToSam	Auto-detected quality format as: Standard.
+2018-04-23 13:58:31,344 - toil.leader - WARNING - W/e/jobsj98N_    [Mon Apr 23 13:55:38 PDT 2018] picard.sam.FastqToSam done. Elapsed time: 0.04 minutes.
+2018-04-23 13:58:31,344 - toil.leader - WARNING - W/e/jobsj98N_    Runtime.totalMemory()=2047541248
+2018-04-23 13:58:31,345 - toil.leader - WARNING - W/e/jobsj98N_    To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+2018-04-23 13:58:31,345 - toil.leader - WARNING - W/e/jobsj98N_    Exception in thread "main" picard.PicardException: Input paired fastq files must be the same length
+2018-04-23 13:58:31,345 - toil.leader - WARNING - W/e/jobsj98N_    	at picard.sam.FastqToSam.doPaired(FastqToSam.java:419)
+2018-04-23 13:58:31,345 - toil.leader - WARNING - W/e/jobsj98N_    	at picard.sam.FastqToSam.makeItSo(FastqToSam.java:374)
+2018-04-23 13:58:31,345 - toil.leader - WARNING - W/e/jobsj98N_    	at picard.sam.FastqToSam.doWork(FastqToSam.java:347)
+2018-04-23 13:58:31,346 - toil.leader - WARNING - W/e/jobsj98N_    	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:282)
+2018-04-23 13:58:31,346 - toil.leader - WARNING - W/e/jobsj98N_    	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:98)
+2018-04-23 13:58:31,346 - toil.leader - WARNING - W/e/jobsj98N_    	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:108)
+2018-04-23 13:58:31,346 - toil.leader - WARNING - W/e/jobsj98N_    [job FastqToSam.cwl] completed permanentFail
+2018-04-23 13:58:31,346 - toil.leader - WARNING - W/e/jobsj98N_    WARNING:cwltool:[job FastqToSam.cwl] completed permanentFail
+2018-04-23 13:58:31,347 - toil.leader - WARNING - W/e/jobsj98N_    Traceback (most recent call last):
+2018-04-23 13:58:31,347 - toil.leader - WARNING - W/e/jobsj98N_      File "/projects/ps-yeolab/software/eclipconda/envs/dropseqtools-1.13/lib/python2.7/site-packages/toil-3.15.0a1-py2.7.egg/toil/worker.py", line 313, in workerScript
+2018-04-23 13:58:31,347 - toil.leader - WARNING - W/e/jobsj98N_        job._runner(jobGraph=jobGraph, jobStore=jobStore, fileStore=fileStore)
+2018-04-23 13:58:31,347 - toil.leader - WARNING - W/e/jobsj98N_      File "/projects/ps-yeolab/software/eclipconda/envs/dropseqtools-1.13/lib/python2.7/site-packages/toil-3.15.0a1-py2.7.egg/toil/job.py", line 1327, in _runner
+2018-04-23 13:58:31,347 - toil.leader - WARNING - W/e/jobsj98N_        returnValues = self._run(jobGraph, fileStore)
+2018-04-23 13:58:31,348 - toil.leader - WARNING - W/e/jobsj98N_      File "/projects/ps-yeolab/software/eclipconda/envs/dropseqtools-1.13/lib/python2.7/site-packages/toil-3.15.0a1-py2.7.egg/toil/job.py", line 1272, in _run
+2018-04-23 13:58:31,348 - toil.leader - WARNING - W/e/jobsj98N_        return self.run(fileStore)
+2018-04-23 13:58:31,348 - toil.leader - WARNING - W/e/jobsj98N_      File "/projects/ps-yeolab/software/eclipconda/envs/dropseqtools-1.13/lib/python2.7/site-packages/toil-3.15.0a1-py2.7.egg/toil/cwl/cwltoil.py", line 461, in run
+2018-04-23 13:58:31,348 - toil.leader - WARNING - W/e/jobsj98N_        raise cwltool.errors.WorkflowException(status)
+2018-04-23 13:58:31,348 - toil.leader - WARNING - W/e/jobsj98N_    WorkflowException: permanentFail
+2018-04-23 13:58:31,349 - toil.leader - WARNING - W/e/jobsj98N_    ERROR:toil.worker:Exiting the worker because of a failed job on host tscc-1-48.sdsc.edu
+2018-04-23 13:58:31,349 - toil.leader - WARNING - W/e/jobsj98N_    WARNING:toil.jobGraph:Due to failure we are reducing the remaining retry count of job 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/FastqToSam.cwl' picard FastqToSam W/e/jobsj98N_ with ID W/e/jobsj98N_ to 0
+2018-04-23 13:58:31,385 - toil.leader - WARNING - Job 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/FastqToSam.cwl' picard FastqToSam W/e/jobsj98N_ with ID W/e/jobsj98N_ is completely failed
+2018-04-23 13:58:39,401 - toil.leader - INFO - No jobs left to run so exiting.
+2018-04-23 13:58:39,402 - toil.leader - INFO - Finished the main loop
+2018-04-23 13:58:39,402 - toil.serviceManager - INFO - Waiting for service manager thread to finish ...
+2018-04-23 13:58:39,697 - toil.serviceManager - INFO - ... finished shutting down the service manager. Took 0.295310020447 seconds
+2018-04-23 13:58:39,698 - toil.statsAndLogging - INFO - Waiting for stats and logging collator thread to finish ...
+2018-04-23 13:58:39,802 - toil.statsAndLogging - INFO - ... finished collating stats and logs. Took 0.103465080261 seconds
+2018-04-23 13:58:39,803 - toil.leader - INFO - Finished toil run with 4 failed jobs
+2018-04-23 13:58:39,804 - toil.leader - INFO - Failed jobs at end of the run: 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/parse_sample.cwl' f/9/jobrkk0Oc 'CWLWorkflow' V/o/jobVzq9XG 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/CreateSequenceDictionary.cwl' picard CreateSequenceDictionary Z/6/jobSZiKKk 'file:///projects/ps-yeolab4/software/dropseqtools/1.13/cwl/FastqToSam.cwl' picard FastqToSam W/e/jobsj98N_
+2018-04-23 13:58:39,812 - toil.realtimeLogger - INFO - Stopping real-time logging server.
+2018-04-23 13:58:39,963 - toil.realtimeLogger - INFO - Joining real-time logging server thread.
+Nodes:        tscc-1-50
